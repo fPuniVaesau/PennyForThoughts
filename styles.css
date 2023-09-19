@@ -137,6 +137,13 @@ blockquote p {
    max-height: 25px;
    align-items: center;
    justify-self: center;
+   transition: 0.3s ease-in-out;
+}
+
+.icon:hover{
+    color: var(--accent-color);
+    max-width: 30px;
+    max-height: 30px;
 }
 
 
