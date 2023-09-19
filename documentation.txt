@@ -1,0 +1,21 @@
+////////////// HTML notes and research section ////////////////
+Make sure we can make our project as compliant as possible, especially for the disabled.
+
+
+
+
+////////////// CSS notes and research section ////////////////
+create a .section class to control the spacining for each class you give this attribute. Things such as the padding and the margin top and bottom so that the spacing is consistent throughout the website.
+
+think of color schemes for this project, we can add the colors as custom variables to the root code so that if we ever need to change it or want to adjust the theme we can easily do so all in one spot. Doing it this way will allow us to make changes all throughtout the webpage by making one change in the root. 
+
+
+
+
+
+////////////// JavaScript notes and research section ////////////////
+Creat a todo section to flex right of the clock section. This will allow users to create a todo list to keep track of thier tasks when working. 
+
+find a way to cycle through a list of quotes so that it changes every day and make sure to set the interval to 24 hours so that there is a new quote each day or everytime the page is opened.
+
+maybe put some quotes into and array and cycle through them daily?

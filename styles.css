@@ -1,0 +1,337 @@
+
+/* This is where we keep our custom variables for the website */
+:root{
+    --font-body: 'Heebo', sans-serif;
+    --font-headers: 'Bebas Neue', sans-serif;
+    
+    --fs-base: 1rem;
+    --fs-small: 0.86rem;
+
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-bold: 700;
+
+    /* color-scheme: light dark; */
+    --gradient-color-1: rgba(255, 255, 255, 0.1);
+    --gradient-color-2: rgba(56, 53, 53, 0.242);
+    --accent-color: rgb(243, 106, 32);
+    
+}
+
+/* This is where we reset the spacing for the website along with seting the box-sizing to border box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 0; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+svg,
+video{
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+
+/* This is where we set some of the styling for all elements of the body, other stylings that we want to specify for certain areas of the website will be done in thier respected classes. */
+body{
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    /* background-color: rgba(91, 89, 89, 0.271); */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 20px;
+    gap: 1rem;
+    /* min-height: 100vh; */
+}
+
+/* This section houses the current date and the welcome message for the user */
+.welcome-section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: .85rem;
+    font-size: 1.5rem;
+    font-weight: var(--fw-100);
+    /* border: 1px solid firebrick; */
+    /* flex: 1; */
+}
+
+.user-info{
+    display: flex;
+    gap:.30em;
+}
+
+.welcome{
+    color: var(--accent-color);
+}
+/* This controls the styling for the current date */
+.currentDate {
+    /* font-size: 0.85rem; */
+    font-weight: var(--fw-300);
+}
+
+/* This section houses the current time for the website (Uncomment the section below to use the clock-section class for styling and positioning in the webpage) */
+/* .clock-section{
+
+} */
+/* This controls the styling for the clock */
+.digitalClock {
+    margin-top: 10px;
+    font-size: 8em;
+    font-family: var(--font-headers);
+}
+
+
+blockquote {
+    font-size: 2rem;
+    font-weight: var(--fw-300);
+    line-height: 1.25;
+    max-width: 45ch;
+    margin-top: 10px;
+    
+}
+
+blockquote p {
+    font-size: 1.15rem;
+}
+
+.quote-author{
+    margin-top: 30px;
+    /* float: right;
+    margin-right: 30px; */
+}
+
+.clock-and-quote-container{
+    /* background: var(--gradient-color-2); */
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 1000px;
+    display: grid;
+    place-content: center;
+
+}
+
+.icon{
+   max-width: 25px;
+   max-height: 25px;
+   align-items: center;
+   justify-self: center;
+}
+
+
+
+
+
+/* /////////////////////////////////////// TO DO SECTION //////////////////////////////////////// */
+
+.to-do-container{
+    display: grid;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(56, 79, 114); */
+    /* text-align: center; */
+}
+
+.task-container{
+    margin: 10px auto;
+    padding: 10px;
+    /* background-color: rgb(127, 176, 255); */
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr, 1fr;
+    gap: .5rem;
+    place-content: center;
+    /* min-height: 500px; */
+}
+
+.task-wrapper{
+    padding: 1em;
+    border-radius: 5px;
+    display: grid;
+    text-align: center;
+    gap: 1em;
+    min-width: 500px;
+    
+}
+
+.pending-task-wrapper{
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+}
+
+.items-todo{
+    min-width: 100%;
+    text-align: center;
+    min-height: 2em;
+    background-color: transparent;
+    padding: .5em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(29, 28, 28);
+    transition: 0.2s ease-in-out;
+    
+}
+
+.task-wrapper input:focus {
+    outline: none;
+    border-bottom: 5px solid rgb(243, 106, 32);
+}
+
+
+/* //////////////////// This is the styling for the newly created div elements with javascript //////*/
+ .addedNewTask {
+     /* background-color: rgb(240, 149, 79); */
+     display: grid;
+     grid-template-columns: 1fr 7fr 1fr 1fr;
+     width: 100%;
+     gap: .5em;
+     padding: 10px;
+     align-items: center;
+     cursor: pointer;
+     font-family: var(--font-body);
+     transition: .3s ease-in;
+     /* border-bottom: 1px solid #fff; */
+ }
+
+ .addedNewTask:not(:first-child){
+     margin-top: .5em;
+ }
+
+ .addedNewTask input[type="checkbox"]{
+     appearance: none;
+     height: 20px;
+     width: 20px;
+     border-radius: 25px;
+     border: 1px solid;
+     position: relative;
+     transition: .3s ease-in-out;
+ }
+
+ .addedNewTask input[type="checkbox"]:before{
+   content: "";
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+}
+
+.addedNewTask input[type="checkbox"]:checked{
+    background-color: rgb(249, 249, 249);
+    border-color: #000;
+
+}
+
+.addedNewTask input[type="checkbox"]:checked:before{
+    position: absolute;
+    content:"\f00c";
+    color: rgb(0, 0, 0);
+    font-size: 0.7em;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.addedNewTask span{
+    font: 0.9em;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.addedNewTask button{
+    /* color: #fff; */
+    width: 100%;
+    padding: .5em;
+    border-radius: .5em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: .3s ease-in-out;
+    background-color: transparent;
+
+
+}
+
+.edit:hover {
+    background-color: rgb(14, 125, 170);
+    
+}
+
+.delete:hover {
+    background-color: firebrick;
+}
+
+/* This takes effect on the toggle of completed => refrence the javascript code tasksChecked() */
+.completed{
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+/* //////////////////////////////// End /////////////////////////////////////////// */
+
+
+.pending-items{
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.count-value{
+    color: rgb(121, 238, 156);
+}
+
+.add-task{
+    min-width: 20em;
+    background-color: rgb(29, 28, 28);
+    padding: .5em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+    outline: 1px solid #fff;
+}
+
+.add-task:active{
+    background-color: #fff;
+    color: #000;
+}
+
+.add-task:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.error {
+    /* background-color: #fff; */
+    border-radius: 10px;
+    padding: 5px;
+    display: none;
+    color: red;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+
