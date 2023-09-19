@@ -102,14 +102,12 @@ main {
     font-family: var(--font-headers);
 }
 
-
 blockquote {
     font-size: 2rem;
     font-weight: var(--fw-300);
     line-height: 1.25;
     max-width: 45ch;
     margin-top: 10px;
-    
 }
 
 blockquote p {
@@ -145,9 +143,6 @@ blockquote p {
     max-width: 30px;
     max-height: 30px;
 }
-
-
-
 
 
 /* /////////////////////////////////////// TO DO SECTION //////////////////////////////////////// */
