@@ -16,7 +16,7 @@
     /* color-scheme: light dark; */
     --gradient-color-1: rgba(255, 255, 255, 0.1);
     --gradient-color-2: rgba(56, 53, 53, 0.242);
-    --accent-color: rgb(243, 106, 32);
+    --accent-color: rgb(243, 131, 32);
     
 }
 
@@ -87,7 +87,6 @@ main {
 }
 /* This controls the styling for the current date */
 .currentDate {
-    /* font-size: 0.85rem; */
     font-weight: var(--fw-300);
 }
 
@@ -105,19 +104,19 @@ main {
 blockquote {
     font-size: 2rem;
     font-weight: var(--fw-300);
-    line-height: 1.25;
+    line-height: 1.5;
     max-width: 45ch;
     margin-top: 10px;
 }
 
-blockquote p {
-    font-size: 1.15rem;
+.daily-quote{
+    /* border: 1px solid red; */
+    padding: 10px;
 }
 
 .quote-author{
     margin-top: 30px;
-    /* float: right;
-    margin-right: 30px; */
+    font-size: 1.15rem;
 }
 
 .clock-and-quote-container{
@@ -199,7 +198,7 @@ blockquote p {
 
 .task-wrapper input:focus {
     outline: none;
-    border-bottom: 5px solid rgb(243, 106, 32);
+    border-bottom: 5px solid var(--accent-color);
 }
 
 
