@@ -17,7 +17,7 @@
     --gradient-color-1: rgba(255, 255, 255, 0.1);
     --gradient-color-2: rgba(56, 53, 53, 0.242);
     --accent-color: rgb(255, 145, 55);
-    --background-Color: #524840;
+    --background-Color: #303030;
     
 }
 
@@ -59,11 +59,16 @@ body{
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 20px;
-    gap: 1rem;
+    display: flex;
+    /* grid-template-columns:repeat(2, 1fr); */
+    flex-wrap: wrap;
+    margin: auto 10px;
+    gap: 3rem;
     /* min-height: 100vh; */
+    /* border: 1px solid green; */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* This section houses the current date and the welcome message for the user */
@@ -99,12 +104,12 @@ main {
 /* This controls the styling for the clock */
 .digitalClock {
     margin-top: 10px;
-    font-size: 8em;
+    font-size: 7.75em;
     font-family: var(--font-headers);
 }
 
 blockquote {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: var(--fw-300);
     line-height: 1.5;
     max-width: 45ch;
@@ -123,9 +128,10 @@ blockquote {
 .clock-and-quote-container{
     padding: 10px;
     border-radius: 10px;
-    min-height: 1000px;
+    /* min-height: 1000px; */
     display: grid;
     place-content: center;
+    /* border: 1px solid lightskyblue; */
 
 }
 
@@ -156,6 +162,7 @@ blockquote {
     justify-content: center;
     /* background-color: rgb(56, 79, 114); */
     /* text-align: center; */
+    /* border: 1px solid yellow; */
 }
 
 .task-container{
