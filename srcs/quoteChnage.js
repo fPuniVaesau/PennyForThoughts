@@ -1,7 +1,10 @@
+let quoteForTheDay = document.querySelector(".quoteOfTheDay");
+
 let randomNumberGenerator = () => {
-    let randomNum = Math.floor(Math.random()*7);
+    let randomNum = Math.floor(Math.random()*7-1);
     return randomNum;
 };
+
 let QuotesOFtheWeek = [
     "Rivers know this, there is no hurry. We shall get there some day.",
 
@@ -16,8 +19,45 @@ let QuotesOFtheWeek = [
     "Wise men speak when they have something to say, fools speak because they have to say something",
 
     "Man is a goal-seeking animal. His life only has meaning if he is reaching out and striving for his goals."
-]
-console.log(randomNumberGenerator());
+];
 
-console.log(QuotesOFtheWeek[0]);
+// quoteForTheDay.innerHTML = QuotesOFtheWeek[randomNumberGenerator()];
+// console.log(randomNumberGenerator());
+// console.log(QuotesOFtheWeek[randomNumberGenerator()]);
 
+let changeQuote = (callbackFn) => {
+    
+    let getNum = callbackFn();
+
+    if(getNum === 1){
+        quoteForTheDay.innerHTML = QuotesOFtheWeek[1];
+    }
+    else if(getNum === 2){
+        quoteForTheDay.innerHTML = QuotesOFtheWeek[2];
+    }
+    else if(getNum === 3){
+        quoteForTheDay.innerHTML = QuotesOFtheWeek[3];
+    }
+    else if(getNum === 4){
+        quoteForTheDay.innerHTML = QuotesOFtheWeek[4];
+    }
+    else if(getNum === 5){
+        quoteForTheDay.innerHTML = QuotesOFtheWeek[5];
+    }
+    else if(getNum === 6){
+        quoteForTheDay.innerHTML = QuotesOFtheWeek[6];
+    }
+    else if(getNum === 7){
+        quoteForTheDay.innerHTML = QuotesOFtheWeek[7];
+    }
+    else{
+        "There is an error";
+    }
+
+    return 
+
+}
+
+setInterval(changeQuote, 10000, randomNumberGenerator);
+
+//Make sure to code out a way to change the author to the the corresponding author.
