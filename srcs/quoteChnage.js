@@ -1,4 +1,4 @@
-let quoteForTheDay = document.querySelector(".quoteOfTheDay");
+// let quoteForTheDay = document.querySelector(".quoteOfTheDay");
 
 let randomNumberGenerator = () => {
     let randomNum = Math.floor(Math.random()*7-1);
@@ -21,9 +21,6 @@ let QuotesOFtheWeek = [
     "Man is a goal-seeking animal. His life only has meaning if he is reaching out and striving for his goals."
 ];
 
-// quoteForTheDay.innerHTML = QuotesOFtheWeek[randomNumberGenerator()];
-// console.log(randomNumberGenerator());
-// console.log(QuotesOFtheWeek[randomNumberGenerator()]);
 
 let changeQuote = (callbackFn) => {
     
@@ -58,6 +55,9 @@ let changeQuote = (callbackFn) => {
 
 }
 
-setInterval(changeQuote, 10000, randomNumberGenerator);
+// setInterval(changeQuote, 10000, randomNumberGenerator);
 
 //Make sure to code out a way to change the author to the the corresponding author.
+
+//Look to create an object that holds the author and the quote and refactor the code to fetch the data from the objects using dot notation. 
+//      => Example of dot notation: example.name, exapmple.quote
