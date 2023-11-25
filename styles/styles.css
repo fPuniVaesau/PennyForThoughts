@@ -344,5 +344,9 @@ blockquote {
 
 }
 
-
-
+/* @media (min-width: 320px){
+    .digitalClock{
+        font-size: 3rem;
+    }
+}
+ */
