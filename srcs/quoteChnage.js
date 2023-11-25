@@ -55,7 +55,7 @@ let changeQuote = (callbackFn) => {
 
 }
 
-// setInterval(changeQuote, 10000, randomNumberGenerator);
+// setInterval(changeQuote, 100000, randomNumberGenerator);
 
 //Make sure to code out a way to change the author to the the corresponding author.
 
