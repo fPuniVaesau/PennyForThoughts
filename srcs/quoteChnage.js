@@ -1,4 +1,4 @@
-// let quoteForTheDay = document.querySelector(".quoteOfTheDay");
+let quoteForTheDay = document.querySelector(".quoteOfTheDay");
 
 let randomNumberGenerator = () => {
     let randomNum = Math.floor(Math.random()*7-1);
@@ -55,7 +55,9 @@ let changeQuote = (callbackFn) => {
 
 }
 
-// setInterval(changeQuote, 100000, randomNumberGenerator);
+// changeQuote(randomNumberGenerator);
+
+setInterval(changeQuote, 7000, randomNumberGenerator);
 
 //Make sure to code out a way to change the author to the the corresponding author.
 
