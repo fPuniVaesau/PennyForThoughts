@@ -40,6 +40,8 @@ const addTask = () => {
     const deleteButtons = document.querySelectorAll(".delete");
     deleteButtons.forEach(button => {
         button.onclick = () =>{
+           //We have to find a way to add a conditional statement to check whether or not the task is checked before hitting the delete button so we are not decrimenting the task twice, once for delete and once for task marked complete.
+
             button.parentNode.remove();
             taskCount -= 1;
             displayCount(taskCount);
