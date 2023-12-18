@@ -417,28 +417,7 @@ blockquote {
 @media(min-width: 640px) {
     .container{
         max-width: 640px;
-    }
-
-    .navigation__list__wrapper{
-        font-size: var(--fs-regular)
-    }
-
-    .navigation__button__wrapper button{
-        width: 3.5rem;
-    }
-    
-    .navigation__button__wrapper button:hover{
-        letter-spacing: 3px;
-        width: 3.5rem;
-    }
-
-    .Title{
-        font-size: var(--fs-xxxlarge);
-        font-weight: 700;
-        /* border: 1px solid #FFF; */
-    }
-
-    
+    }    
 
 }
 
