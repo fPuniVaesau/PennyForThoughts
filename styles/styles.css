@@ -373,43 +373,7 @@ blockquote {
     .container{
         max-width: 475px;
     }
-
-    .navigation__list__wrapper{
-        font-size: var(--fs-small);
-    }
-
-    .navigation__button__wrapper button{
-        font-size: var(--fs-small);
-    }
-    
-    .navigation__button__wrapper button:hover{
-        background-color: var(--color-stone500);
-        letter-spacing: 1px;
-        font-weight: 300;
-        width: 3.5rem;
-        border: none;
-    }
-
-    .navigation__button__wrapper button:active{
-        background-color: var(--color-alternate);
-    }
-
-    .StorySection__mainContent__wrapper{
-        /* border: 1px solid navy; */
-        display: flex;
-        flex-direction: column;
-    }
-
-    .Title{
-        font-size: var(--fs-xxlarge);
-        font-weight: 700;
-    }
-
-    .quote{
-        font-size: var(--fs-medium);
-    }
-    
-    
+  
    
 }
 
