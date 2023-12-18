@@ -448,23 +448,6 @@ blockquote {
         max-width: 768px;
     }
 
-    .navigation__button__wrapper button{
-        width: 3.5rem;
-    }
-    
-    .navigation__button__wrapper button:hover{
-        letter-spacing: 3px;
-        width: 5rem;
-    }
-
-    .StorySection__mainContent__wrapper{
-        /* border: 1px solid navy; */
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 1fr 1fr;
-        
-    }
-
 }
 
 /* large screens */
