@@ -344,9 +344,149 @@ blockquote {
 
 }
 
-/* @media (min-width: 320px){
-    .digitalClock{
-        font-size: 3rem;
+/* => /////////// Media Query Responsive Webpages //////////// */
+
+/* Container Utility Class */
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Section Utility Class */
+.sections{
+    margin: 10px auto;
+}
+
+.button{
+    border: none;
+    background-color: transparent;
+    font-weight: 200;
+}
+
+/* => I am building mobile first so I am using min-width for media query breakpoints. The container classes within each media query breakpoint makes sure that it does not out grow the breakpoint size. */
+/* xs screens */
+
+@media(min-width: 475px) {
+    .container{
+        max-width: 475px;
+    }
+
+    .navigation__list__wrapper{
+        font-size: var(--fs-small);
+    }
+
+    .navigation__button__wrapper button{
+        font-size: var(--fs-small);
+    }
+    
+    .navigation__button__wrapper button:hover{
+        background-color: var(--color-stone500);
+        letter-spacing: 1px;
+        font-weight: 300;
+        width: 3.5rem;
+        border: none;
+    }
+
+    .navigation__button__wrapper button:active{
+        background-color: var(--color-alternate);
+    }
+
+    .StorySection__mainContent__wrapper{
+        /* border: 1px solid navy; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Title{
+        font-size: var(--fs-xxlarge);
+        font-weight: 700;
+    }
+
+    .quote{
+        font-size: var(--fs-medium);
+    }
+    
+    
+   
+}
+
+/* small screens */
+@media(min-width: 640px) {
+    .container{
+        max-width: 640px;
+    }
+
+    .navigation__list__wrapper{
+        font-size: var(--fs-regular)
+    }
+
+    .navigation__button__wrapper button{
+        width: 3.5rem;
+    }
+    
+    .navigation__button__wrapper button:hover{
+        letter-spacing: 3px;
+        width: 3.5rem;
+    }
+
+    .Title{
+        font-size: var(--fs-xxxlarge);
+        font-weight: 700;
+        /* border: 1px solid #FFF; */
+    }
+
+    
+
+}
+
+/* medium screens */
+@media(min-width:768px) {
+    .container{
+        max-width: 768px;
+    }
+
+    .navigation__button__wrapper button{
+        width: 3.5rem;
+    }
+    
+    .navigation__button__wrapper button:hover{
+        letter-spacing: 3px;
+        width: 5rem;
+    }
+
+    .StorySection__mainContent__wrapper{
+        /* border: 1px solid navy; */
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+}
+
+/* large screens */
+@media(min-width: 1024px) {
+    .container{
+        max-width: 1024px;
+    }
+    
+}
+
+/* extra large screens */
+@media(min-width: 1280px) {
+    .container{
+        max-width: 1280px;
+    }
+
+
+}
+
+/* 2XL screens */
+@media(min-width: 1536px) {
+    .container{
+        max-width: 1536px;
     }
 }
- */
