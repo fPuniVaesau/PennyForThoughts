@@ -432,20 +432,10 @@ blockquote {
     
     .icon{
         /* border: 1px solid yellow; */
-        max-width: 30px;
-        max-height: 30px;
-        align-items: center;
-        justify-self: center;
-        transition: 0.3s ease-in-out;
-        margin: 0;
-        padding: 0;
+        max-width: 15px;
+        max-height: 15px;
     }
-    
-    .icon:hover{
-        color: var(--accent-color);
-        /* max-width: 30px;
-        max-height: 30px; */
-    }
+
 
 }
 
