@@ -391,13 +391,60 @@ blockquote {
     }
     
     .user-info{
-        display: flex;
         gap:.20em;
     }
     
     /* This controls the styling for the current date */
     .currentDate {
         font-weight: var(--fw-200);
+    }
+
+    .digitalClock {
+        font-size: 4.5em;
+    }
+    
+    blockquote {
+        font-size: 1.75rem;
+        font-weight: var(--fw-300);
+        line-height: 1.5;
+        max-width: 45ch;
+        margin-top: 10px;
+    }
+    
+    .daily-quote{
+        padding: 10px;
+    }
+    
+    .quote-author{
+        margin-top: 30px;
+        font-size: 1.15rem;
+    }
+    
+    .clock-and-quote-container{
+        padding: 10px;
+        border-radius: 10px;
+        /* min-height: 1000px; */
+        display: grid;
+        place-content: center;
+        /* border: 1px solid lightskyblue; */
+    
+    }
+    
+    .icon{
+        /* border: 1px solid yellow; */
+        max-width: 30px;
+        max-height: 30px;
+        align-items: center;
+        justify-self: center;
+        transition: 0.3s ease-in-out;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .icon:hover{
+        color: var(--accent-color);
+        /* max-width: 30px;
+        max-height: 30px; */
     }
 
 }
