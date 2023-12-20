@@ -411,24 +411,6 @@ blockquote {
         margin-top: 10px;
     }
     
-    .daily-quote{
-        padding: 10px;
-    }
-    
-    .quote-author{
-        margin-top: 30px;
-        font-size: 1.15rem;
-    }
-    
-    .clock-and-quote-container{
-        padding: 10px;
-        border-radius: 10px;
-        /* min-height: 1000px; */
-        display: grid;
-        place-content: center;
-        /* border: 1px solid lightskyblue; */
-    
-    }
     
     .icon{
         /* border: 1px solid yellow; */
