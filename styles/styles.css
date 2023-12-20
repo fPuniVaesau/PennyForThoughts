@@ -369,6 +369,39 @@ blockquote {
     .container{
         max-width: 475px;
     }
+
+    main {
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-auto-flow: rows;
+        min-height: 100vh;
+        border: 1px solid green;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-section{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: .85rem;
+        font-size: .85rem;
+        font-weight: var(--fw-100);
+    }
+    
+    .user-info{
+        display: flex;
+        gap:.30em;
+    }
+    
+    .welcome{
+        color: var(--accent-color);
+    }
+    /* This controls the styling for the current date */
+    .currentDate {
+        font-weight: var(--fw-300);
+    }
+
 }
 
 /* small screens */
