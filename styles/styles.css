@@ -164,7 +164,7 @@ blockquote {
 .task-container{
     margin: 10px auto;
     padding: 10px;
-    /* background-color: rgb(127, 176, 255); */
+    background-color: rgb(127, 176, 255);
     border-radius: 10px;
     display: grid;
     grid-template-columns: 3fr, 1fr;
