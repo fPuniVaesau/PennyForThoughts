@@ -384,6 +384,7 @@ blockquote {
         display: flex;
         align-items: center;
         text-align: center;
+        justify-content: center;
         gap: .85rem;
         font-size: .85rem;
         font-weight: var(--fw-100);
@@ -392,6 +393,7 @@ blockquote {
     .user-info{
         display: flex;
         gap:.30em;
+        border: 1px solid firebrick;
     }
     
     .welcome{
