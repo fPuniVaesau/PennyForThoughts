@@ -398,6 +398,48 @@ blockquote {
         max-width: 15px;
         max-height: 15px;
     }
+    
+    .task-container{
+        border: 1px solid firebrick;
+        grid-template-columns: 3fr, 1fr;
+        gap: .5rem;
+        place-content: center;
+        /* min-height: 500px; */
+    }
+    
+    .task-wrapper{
+        padding: 1em;
+        border-radius: 5px;
+        display: grid;
+        text-align: center;
+        gap: 1em;
+        min-width: 500px;
+        
+    }
+    
+    .pending-task-wrapper{
+        border-radius: 5px;
+        padding: 10px;
+        display: grid;
+    }
+    
+    .items-todo{
+        min-width: 100%;
+        text-align: center;
+        min-height: 2em;
+        background-color: transparent;
+        padding: .5em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(29, 28, 28);
+        transition: 0.2s ease-in-out;
+        
+    }
+    
+    .task-wrapper input:focus {
+        outline: none;
+        border-bottom: 5px solid var(--accent-color);
+    }
 
 }
 
