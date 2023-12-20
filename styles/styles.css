@@ -59,13 +59,12 @@ body{
 }
 
 main {
-    display: flex;
-    /* grid-template-columns:repeat(2, 1fr); */
-    flex-wrap: wrap;
-    margin: auto 10px;
-    gap: 3rem;
-    /* min-height: 100vh; */
-    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+
+
+    min-height: 100vh;
+    border: 1px solid green;
     padding: 10px;
     justify-content: center;
     align-items: center;
