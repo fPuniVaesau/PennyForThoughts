@@ -392,16 +392,12 @@ blockquote {
     
     .user-info{
         display: flex;
-        gap:.30em;
-        border: 1px solid firebrick;
+        gap:.20em;
     }
     
-    .welcome{
-        color: var(--accent-color);
-    }
     /* This controls the styling for the current date */
     .currentDate {
-        font-weight: var(--fw-300);
+        font-weight: var(--fw-200);
     }
 
 }
