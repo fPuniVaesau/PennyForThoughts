@@ -276,8 +276,6 @@ blockquote {
     outline: none;
     transition: .3s ease-in-out;
     background-color: transparent;
-
-
 }
 
 .edit:hover {
@@ -308,7 +306,6 @@ blockquote {
 }
 
 .add-task{
-    min-width: 20em;
     background-color: rgb(29, 28, 28);
     padding: .5em;
     border-radius: 10px;
@@ -400,8 +397,7 @@ blockquote {
     }
     
     .task-container{
-        border: 1px solid firebrick;
-        grid-template-columns: 3fr, 1fr;
+        /* border: 1px solid firebrick; */
         gap: .5rem;
         place-content: center;
         /* min-height: 500px; */
@@ -424,21 +420,24 @@ blockquote {
     }
     
     .items-todo{
-        min-width: 100%;
-        text-align: center;
-        min-height: 2em;
-        background-color: transparent;
-        padding: .5em;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid rgb(29, 28, 28);
-        transition: 0.2s ease-in-out;
-        
+        /* background-color: firebrick; */
     }
     
     .task-wrapper input:focus {
         outline: none;
         border-bottom: 5px solid var(--accent-color);
+    }
+
+    .add-task button{
+        min-width: 5em;
+        background-color: rgb(29, 28, 28);
+        padding: .5em;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        color: #fff;
+        outline: 1px solid #fff;
     }
 
 }
