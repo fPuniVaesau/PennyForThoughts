@@ -62,7 +62,7 @@ main {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     min-height: 100vh;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     justify-content: center;
     align-items: center;
 }
