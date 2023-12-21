@@ -428,18 +428,6 @@ blockquote {
         border-bottom: 5px solid var(--accent-color);
     }
 
-    .add-task button{
-        min-width: 5em;
-        background-color: rgb(29, 28, 28);
-        padding: .5em;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        color: #fff;
-        outline: 1px solid #fff;
-    }
-
 }
 
 /* small screens */
