@@ -54,17 +54,16 @@ body{
     font-size: var(--fs-base);
     display: grid;
     place-content: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--background-Color);
 }
 
 main {
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    min-height: 100vh;
-    /* border: 1px solid green; */
+    border: 1px solid green;
     justify-content: center;
     align-items: center;
+    /* min-height: 100svh; */
 }
 
 /* This section houses the current date and the welcome message for the user */
