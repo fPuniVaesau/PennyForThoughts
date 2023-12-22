@@ -70,12 +70,12 @@ const addTask = () => {
         checkBox.onchange = () => {
             checkBox.nextElementSibling.classList.toggle("completed");
 
-            if(checkBox.checked){
-                taskCount -= 1;
-            }
-            else{
-                taskCount += 1;
-            }
+            // if(checkBox.checked){
+            //     taskCount -= 1;
+            // }
+            // else{
+            //     taskCount += 1;
+            // }
             displayCount(taskCount);
         }
     })
