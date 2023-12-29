@@ -16,7 +16,7 @@
     /* color-scheme: light dark; */
     --gradient-color-1: rgba(255, 255, 255, 0.1);
     --gradient-color-2: rgba(56, 53, 53, 0.242);
-    --accent-color: rgba(153, 178, 29, 0.932);
+    --accent-color: rgba(178, 74, 29, 0.932);
     --background-Color: #212121e2;
     
 }
@@ -60,7 +60,7 @@ body{
 
 main {
     display: grid;
-    border: 1px solid green;
+    border: 1px solid rgb(96, 114, 96);
     justify-content: center;
     align-items: center;
     /* min-height: 100svh; */
