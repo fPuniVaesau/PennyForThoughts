@@ -433,7 +433,22 @@ blockquote {
 @media(min-width: 640px) {
     .container{
         max-width: 640px;
-    }    
+    }
+
+    .welcome-section{
+        justify-content: center;
+        font-size: 1.25rem;
+        font-weight: var(--fw-100);
+    }
+
+    .digitalClock {
+        font-size: 6em;
+    }
+    
+    .icon{
+        max-width: 20px;
+        max-height: 20px;
+    }
 }
 
 /* medium screens */
