@@ -474,15 +474,7 @@ blockquote {
         max-width: 1024px;
     }
 
-    main {
-        display: grid;
-        grid-template-columns:repeat(1, 1fr);
-        grid-auto-flow: rows;
-    }
-
     .welcome-section{
-        display: flex;
-        justify-content: flex-start;
         font-size: 1.25rem;
         font-weight: var(--fw-100);
     }
