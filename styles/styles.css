@@ -418,10 +418,6 @@ blockquote {
         display: grid;
     }
     
-    .items-todo{
-        /* background-color: firebrick; */
-    }
-    
     .task-wrapper input:focus {
         outline: none;
         border-bottom: 5px solid var(--accent-color);
