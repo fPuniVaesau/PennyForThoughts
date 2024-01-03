@@ -14,10 +14,10 @@
     --fw-bold: 700;
 
     /* color-scheme: light dark; */
-    --gradient-color-1: rgba(255, 255, 255, 0.1);
+    --gradient-color-1: rgba(132, 129, 129, 0.1);
     --gradient-color-2: rgba(56, 53, 53, 0.242);
     --accent-color: rgba(161, 178, 29, 0.932);
-    --background-Color: #212121e2;
+    --background-Color: #3b3b3be2;
     
 }
 
